@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — Nonogram</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 40px 20px 80px; max-width: 760px;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2933; background: #ffffff;
+  }
+  h1 { font-size: 28px; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 34px 0 8px; }
+  .meta { color: #6b7280; font-size: 14px; margin-bottom: 28px; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+  th, td { border: 1px solid #d7dde5; padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: #f3f5f9; }
+  .lang { margin-bottom: 26px; padding-bottom: 26px; border-bottom: 1px solid #e3e8ef; }
+  .lang:last-child { border-bottom: none; }
+  footer { margin-top: 40px; color: #6b7280; font-size: 14px; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e7eb; background: #111827; }
+    th { background: #1f2937; }
+    th, td { border-color: #374151; }
+    .lang { border-bottom-color: #374151; }
+  }
+</style>
+</head>
+<body>
+
+<div class="lang">
+<h1>Политика конфиденциальности</h1>
+<p class="meta">Приложение «Nonogram» · Последнее обновление: 2 ноября 2026 г.</p>
+
+<h2>1. Общие положения</h2>
+<p>Настоящая Политика описывает, какие данные собирает приложение «Nonogram» (далее — Приложение), зачем они нужны и как их удалить. Используя Приложение, вы соглашаетесь с условиями настоящей Политики.</p>
+<p>Приложение разработано независимым разработчиком и распространяется через RuStore и Google Play.</p>
+
+<h2>2. Какие данные собираются</h2>
+<p>Приложение <strong>не запрашивает имя, номер телефона, адрес электронной почты, платёжные данные и геолокацию</strong>. Рекламные и аналитические SDK не используются — ни рекламы, ни сквозной аналитики в Приложении нет.</p>
+<table>
+<tr><th>Данные</th><th>Зачем</th></tr>
+<tr><td>Анонимный идентификатор пользователя (UID), созданный Firebase Authentication при первом запуске</td><td>Синхронизация игрового прогресса между устройствами и хранение отправленных вами обращений. Идентификатор случайный, к личным данным не привязан</td></tr>
+<tr><td>Игровой прогресс: пройденные уровни, очки, подсказки, игровая валюта, ежедневные задания</td><td>Работа приложения: восстановление прогресса, расчёт наград, статистика</td></tr>
+<tr><td>Текст обращения об ошибке, платформа устройства и дата отправки (только если вы сами отправили обращение через Приложение)</td><td>Разбор ошибок и обратная связь</td></tr>
+<tr><td>Обложки уровней, загруженные с серверов Yandex Object Storage</td><td>Отображение каталога уровней и офлайн-режим. Сами обложки не содержат данных игрока</td></tr>
+</table>
+<p>Дополнительно на устройстве хранятся только настройки: язык интерфейса, светлая/тёмная тема, прогресс и кэш изображений обложек (не более 1 ГБ, очищается автоматически).</p>
+
+<h2>3. Где хранятся данные</h2>
+<ul>
+<li><strong>Firebase (Google), проект nonogram-d4759</strong> — анонимная аутентификация и Firestore: прогресс и обращения.</li>
+<li><strong>Yandex Object Storage</strong> — публичный бакет <code>nonogram-covers-first</code> с обложками уровней. Персональные данные в нём не хранятся.</li>
+</ul>
+<p>Передача данных защищена шифрованием по TLS.</p>
+
+<h2>4. Кто имеет доступ к данным</h2>
+<p>Доступ есть только у разработчика Приложения — в объёме, необходимом для работы сервера и разбора обращений. Данные не продаются и не передаются третьим лицам, кроме случаев, прямо предусмотренных законом.</p>
+
+<h2>5. Сроки хранения</h2>
+<p>Данные хранятся, пока существует ваш анонимный аккаунт, и удаляются вместе с ним. Обращения хранятся до их разбора разработчиком.</p>
+
+<h2>6. Удаление данных</h2>
+<p>Вы можете удалить все свои данные прямо в Приложении: <strong>Профиль → «Опасная зона» → удалить аккаунт</strong>. Приложение удалит анонимный аккаунт, сохранённый прогресс и отправленные обращения, а также очистит локальные данные.</p>
+<p>Если удаление по каким-то причинам не удалось, отправьте запрос на почту <strong>onerusnak@gmail.com</strong> с темой «Удаление данных» — данные будут удалены вручную.</p>
+
+<h2>7. Дети</h2>
+<p>Приложение имеет общее назначение и не собирает данные детей. Установив его, вы подтверждаете, что вам исполнилось 13 лет, либо что использование происходит с согласия родителей или законного представителя.</p>
+
+<h2>8. Изменения Политики</h2>
+<p>При обновлении Приложения Политика может быть изменена. Актуальная редакция всегда размещена по адресу этой страницы, дата обновления указана в её начале.</p>
+
+<h2>9. Контакты</h2>
+<p>Разработчик: Vovai · <strong>onerusnak@gmail.com</strong></p>
+</div>
+
+<div class="lang" lang="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Application “Nonogram” · Last updated: November 2, 2026</p>
+
+<h2>1. General</h2>
+<p>This policy explains what data the “Nonogram” application (the “App”) collects, why, and how to delete it. By using the App you agree to this policy. The App is developed by an independent developer and distributed via RuStore and Google Play.</p>
+
+<h2>2. What data is collected</h2>
+<p>The App <strong>does not request your name, phone number, email address, payment details or location</strong>. No advertising or analytics SDKs are used — the App contains neither ads nor tracking.</p>
+<table>
+<tr><th>Data</th><th>Purpose</th></tr>
+<tr><td>Anonymous user identifier (UID) generated by Firebase Authentication on first launch</td><td>Syncing game progress across devices and storing support requests you send. The identifier is random and not linked to personal data</td></tr>
+<tr><td>Game progress: completed levels, score, hints, in-game currency, daily tasks</td><td>App operation: restoring progress, calculating rewards and statistics</td></tr>
+<tr><td>Error report text, device platform and submission date (only if you send a report yourself)</td><td>Troubleshooting and feedback</td></tr>
+<tr><td>Level covers downloaded from Yandex Object Storage</td><td>Displaying the level catalogue and offline mode. The covers contain no player data</td></tr>
+</table>
+<p>Your device additionally stores only settings: interface language, light/dark theme, progress and an image cache of covers (up to 1 GB, evicted automatically).</p>
+
+<h2>3. Where data is stored</h2>
+<ul>
+<li><strong>Firebase (Google), project nonogram-d4759</strong> — anonymous authentication and Firestore: progress and support requests.</li>
+<li><strong>Yandex Object Storage</strong> — public bucket <code>nonogram-covers-first</code> holding level covers. No personal data is stored there.</li>
+</ul>
+<p>Data is transferred over TLS encryption.</p>
+
+<h2>4. Who can access the data</h2>
+<p>Only the App developer has access, limited to what is required to operate the service and review support requests. Data is never sold or shared with third parties except as required by law.</p>
+
+<h2>5. Retention</h2>
+<p>Data is kept while your anonymous account exists and is deleted together with it. Support requests are kept until reviewed by the developer.</p>
+
+<h2>6. Deleting your data</h2>
+<p>You can delete all your data directly in the App: <strong>Profile → “Danger zone” → delete account</strong>. The App removes the anonymous account, stored progress and submitted reports, and clears local data.</p>
+<p>If deletion fails for any reason, email <strong>onerusnak@gmail.com</strong> with the subject “Data deletion request” and the data will be removed manually.</p>
+
+<h2>7. Children</h2>
+<p>The App has a general audience and does not knowingly collect data from children. By installing it you confirm you are at least 13 years old, or that a parent or guardian has consented.</p>
+
+<h2>8. Changes</h2>
+<p>This policy may be updated when the App changes. The current version is always published on this page, with the update date shown at the top.</p>
+
+<h2>9. Contact</h2>
+<p>Developer: Vovai · <strong>onerusnak@gmail.com</strong></p>
+</div>
+
+<footer>
+© 2026 Nonogram. Страница опубликована на GitHub Pages.
+</footer>
+
+</body>
+</html>
